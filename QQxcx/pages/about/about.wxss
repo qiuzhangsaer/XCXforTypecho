@@ -1,0 +1,7 @@
+.mpcode {
+  margin-top: 20rpx;
+  border: 10rpx solid orange;
+  border-radius: 5%;
+  height: 600rpx;
+  width: 100%;
+}

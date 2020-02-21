@@ -1,0 +1,31 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="content">日志</view>
+</cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-orange">
+    <view class="bg-gradual-orange content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-orange">v1.0.2</view>
+        <view class="cu-tag line-white">2020/02/21</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.增加文章底部banner广告</view>
+        <view>2.广告支持，点击后弹出激励视频广告</view>
+        <view>3.广告设置修改相应位置的广告id即可</view>
+        <view>基于v1.0.0版衍生出的QQ小程序版本</view>
+      </view>
+    </view>
+
+    <view class="bg-gradual-orange content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-orange">v1.0.0</view>
+        <view class="cu-tag line-white">2020/02/15</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.优化关于板块</view>
+        <view>2.优化顶部导航栏</view>
+        <view>基于LoveEmpathy版weTypecho编写</view>
+      </view>
+    </view>
+  </view>
+</view>
