@@ -1,0 +1,18 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+	<view slot="content">日志</view>
+</cu-custom>
+<view class="cu-timeline">
+	<view class="cu-item text-orange">
+		<view class="bg-gradual-orange content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-orange">v1.0.0</view>
+				<view class="cu-tag line-white">2020/02/15</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<view>1.优化关于板块</view>
+				<view>2.优化顶部导航栏</view>
+				<view>基于LoveEmpathy版weTypecho编写</view>
+			</view>
+		</view>
+	</view>
+</view>
