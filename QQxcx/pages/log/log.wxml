@@ -3,6 +3,20 @@
 </cu-custom>
 <view class="cu-timeline">
   <view class="cu-item text-orange">
+		<view class="bg-gradual-orange content shadow">
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-orange">v1.2.0</view>
+				<view class="cu-tag line-white">2020/06/03</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<view>1.文章详情页面底部增加评论展示</view>
+				<view>2.排行页面上方增加搜索功能</view>
+        <view>3.搜索页面增加插屏广告</view>
+			</view>
+		</view>
+	</view>
+
+  <view class="cu-item text-orange">
     <view class="bg-gradual-orange content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-orange">v1.0.2</view>

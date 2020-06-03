@@ -1,3 +1,4 @@
+const tools = require("../../utils/tools.js");
 const app = getApp(),
 	page = app.page,
 	request = app.request,
@@ -24,7 +25,8 @@ page({
 		})
 	},
 	onShow() {
-		getDetail(id)
+		getDetail(id);
+		getComment(id);
 	},
 	onPullDownRefresh: function () {
 		// 页面下拉
@@ -65,6 +67,30 @@ function getDetail(cid) {
 				info: r
 			}, () => {
 				wx.hideLoading()
+			});
+		}
+	})
+}
+
+function getComment(cid) {
+	request({
+		url: 'getcomment',
+		data: {
+			cid
+		},
+		success: r => {
+			for(let i = 0;i<r.length;i++){
+				r[i].time = tools.formatTime(r[i].created);
+				r[i].avatar = 'data:image/png;base64,'+wx.getFileSystemManager().readFileSync('static/images/cmtavatar/cmtavatar_'+Math.round(Math.random()*5+1)+'.png', "base64");
+				if (r[i].replays) {
+					for(let re = 0;re<r[i].replays.length;re++){
+						r[i].replays[re].time = tools.formatTime(r[i].replays[re].created);
+						r[i].replays[re].avatar = 'data:image/png;base64,'+wx.getFileSystemManager().readFileSync('static/images/cmtavatar/cmtavatar_'+Math.round(Math.random()*5+1)+'.png', "base64");
+					}
+				}
+			}
+			g.setData({
+				comment: r
 			});
 		}
 	})

@@ -1,5 +1,8 @@
 //获取应用实例
-const app = getApp()
+const app = getApp(),
+	page = app.page,
+	request = app.request,
+	route = app.route
 
 Page({
   data: {
@@ -16,7 +19,7 @@ Page({
   showSupport() {
     wx.previewImage({
       urls: ['https://wx.xvkes.cn/paycode.jpg'],
-      current: 'https://wx.xvkes.cn/paycode.jpg' // 当前显示图片的http链接      
+      current: 'https://wx.xvkes.cn/paycode.jpg' // 当前显示图片的https链接      
     })
   },
 

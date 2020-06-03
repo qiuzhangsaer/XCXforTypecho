@@ -11,7 +11,6 @@
 		{{item.name}}
 	</view>
 </scroll-view>
-
 <view class="padding-lr-xl">
 	<block wx:for='{{list}}' wx:key>
 		<view bindtap='toPage' data-id='{{item.cid}}' class="text-white margin-tb bg-img bg-mask padding-xl radius shadow-blur flex flex-direction align-center" style="background-image: url('{{item.thumb[0].str_value}}');min-height: 200rpx;">

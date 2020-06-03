@@ -66,3 +66,16 @@ page {
 .list ._content {
     min-height: 150rpx;
 }
+
+.search {
+	position: absolute;
+	left: 30rpx;
+	top: 80rpx;
+	border-radius: 50rpx;
+	width: 400rpx;
+	background-color: white;
+	height: 70rpx;
+	opacity:0.5;
+	font-size: 40rpx;
+	padding-left: 30rpx;
+}

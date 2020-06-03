@@ -4,6 +4,36 @@
 </cu-custom>
 <view style="height: 100%;" class="bg-{{theme=='light'?'white':'black'}}" wx:if='{{article.theme}}'>
 	<template is="entry" data="{{...article}}" />
+	<view class="comment">
+		<view class="comment-title">评论</view>
+		<view wx:if="{{comment.length > 0}}">
+			<view class="flex" style="margin-bottom:20rpx;" wx:for="{{comment}}" wx:key="{{i}}">
+				<view class="basis-xs cu-avatar xl round margin-left" style="background-image:url({{item.avatar}});"></view>
+				<view class="basis-xl comment-body shadow radius">
+					<view class="comment-name">{{item.author}}:</view>
+					<view class="comment-content">{{item.text}}</view>
+					<view class="comment-time">{{item.time}}</view>
+					<view wx:if="{{item.replays}}">
+						<view class="flex" wx:for="{{item.replays}}" wx:key="{{k}}" wx:for-item="rps">
+							<view class="basis-xs cu-avatar lg round" style="background-image:url({{rps.avatar}});"></view>
+							<view class="basis-xl comment-body radius solids">
+								<view class="comment-name">{{rps.author}}:</view>
+								<view class="comment-content">{{rps.text}}</view>
+								<view class="comment-time">{{rps.time}}</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view wx:else>
+			<view class="padding-sm">
+				<view class="padding radius text-center shadow-blur bg-grey" >
+					<view class="text-xl">本文章还没有人评论</view>
+				</view>
+			</view>
+		</view>
+	</view>
 </view>
 <view class="round floating bg-blue shadow-blur" bindtap='theme' wx:if='{{article.theme}}'>
 	<image src="../../static/images/{{article.theme=='light'?'sun--default':'moon--current'}}.png"></image>

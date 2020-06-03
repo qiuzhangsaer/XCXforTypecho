@@ -11,7 +11,9 @@
   <view class="padding flex text-center text-grey bg-white shadow-warp">
     <view class="flex flex-sub flex-direction solid-right">
       <view class="text-xxl text-orange">蓄势待发的看客(吃瓜群众)</view>
-      <view class="margin-top-sm"> <text class="cuIcon-attentionfill"></text>一睡解千愁</view>
+      <view class="margin-top-sm">
+				<text class="cuIcon-footprint"></text> 枪在手，跟我走
+			</view>
     </view>
   </view>
 

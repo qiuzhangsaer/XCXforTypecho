@@ -8,14 +8,15 @@
 	</view>
 
 	<!--显示数据-->
-	<view class="padding flex text-center text-grey bg-white shadow-warp">
-		<view class="flex flex-sub flex-direction solid-right">
+	<view class="padding flex text-center text-grey bg-white shadow-warp" style="border:0">
+		<view class="flex flex-sub flex-direction">
 			<view class="text-xxl text-orange">蓄势待发的看客(吃瓜群众)</view>
 			<view class="margin-top-sm">
-				<text class="cuIcon-attentionfill"></text>一睡解千愁</view>
+				<text class="cuIcon-footprint"></text> 枪在手，跟我走
+			</view>
 		</view>
 	</view>
-
+	<official-account></official-account>
 	<!--底部-->
 	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 		<view class="cu-item arrow">

@@ -51,6 +51,18 @@ page({
 			})
 		}
 	},
+
+	search(e) {
+		e = e.detail.value;
+		route({
+			type: 'navigate',
+			url: 'search',
+			params: {
+				kw: e
+			}
+		})
+	},
+	
 	toInfo(e) {
 		e = e.currentTarget.dataset.id
 		route({

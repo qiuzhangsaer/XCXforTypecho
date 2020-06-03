@@ -15,7 +15,7 @@
 	height: 90rpx;
 	display: flex;
 	position: fixed;
-	right: 30rpx;
+	left: 30rpx;
 	bottom: 30rpx;
 	justify-content: center;
 	align-items: center;
@@ -24,4 +24,41 @@
 .floating image {
 	width: 50rpx;
 	height: 50rpx;
+}
+.comment {
+	margin:30rpx;
+	border-top: 5rpx solid;
+}
+
+.comment-title {
+	margin:20rpx;
+	font-size: 70rpx;
+}
+.comment-body {
+	padding: 10rpx;
+	margin-left: 15rpx;
+	background-color: ghostwhite;
+}
+
+.comment-name {
+	padding-bottom:10rpx;
+	border-bottom: 1rpx gainsboro dashed;
+	font-weight: 700;
+	font-size: 30rpx;
+	color: #000;
+}
+
+.comment-content {
+	padding:10rpx;
+	border-bottom: 1rpx gainsboro dashed;
+	font-size: 30rpx;
+	color: #000;
+}
+
+.comment-time {
+	padding-top:10rpx;
+	margin-bottom: 10rpx;
+	font-size: 30rpx;
+	color: gray;
+	text-align: right;
 }

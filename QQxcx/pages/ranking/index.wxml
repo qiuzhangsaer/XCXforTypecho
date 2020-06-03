@@ -36,3 +36,4 @@
         </view>
     </view>
 </view>
+<input class="search" placeholder="请输入关键字搜索" confirm-type="search" bindconfirm='search'></input>

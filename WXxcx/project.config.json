@@ -76,7 +76,7 @@
 					"name": "我的",
 					"pathName": "pages/user/index",
 					"query": "",
-					"scene": null
+					"scene": 1011
 				},
 				{
 					"id": -1,

@@ -2,6 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/ranking/index",
+        "pages/search/index",
         "pages/user/index",
         "pages/detail/index",
         "pages/about/about",

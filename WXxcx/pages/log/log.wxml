@@ -5,6 +5,19 @@
 	<view class="cu-item text-orange">
 		<view class="bg-gradual-orange content shadow">
 			<view class="cu-capsule radius">
+				<view class="cu-tag bg-white text-orange">v1.2.0</view>
+				<view class="cu-tag line-white">2020/06/02</view>
+			</view>
+			<view class="margin-top-sm text-content">
+				<view>1.文章详情页面底部增加评论展示</view>
+				<view>2.排行页面上方增加搜索功能</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="cu-item text-orange">
+		<view class="bg-gradual-orange content shadow">
+			<view class="cu-capsule radius">
 				<view class="cu-tag bg-white text-orange">v1.0.0</view>
 				<view class="cu-tag line-white">2020/02/15</view>
 			</view>

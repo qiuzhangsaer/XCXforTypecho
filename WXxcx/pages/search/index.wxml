@@ -1,0 +1,38 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="content">搜索结果</view>
+</cu-custom>
+<view class="padding-sm">
+	<view class="padding radius text-center shadow-blur bg-brown" >
+		<view class="text-lg">包含关键字"{{keyword}}"的文章</view>
+	</view>
+</view>
+<view wx:if="{{list != 'none'}}">
+  <view class="cu-card article" bindtap='toInfo' data-id='{{item.cid}}' wx:for='{{list}}' wx:key>
+    <view class="cu-item shadow">
+      <view class="title"><view class="text-cut">{{item.title}}</view></view>
+      <view class="content">
+        <image src="{{item.thumb[0].str_value}}" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content">
+            标签:<text wx:for='{{item.tag}}' wx:for-item="tag">[{{tag.name}}]</text>
+          </view>
+          <view>
+            <view class="cu-tag bg-orange light sm round" wx:for='{{item.categories}}' wx:for-item="cname">{{cname.name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <view class="padding-sm">
+		<view class="padding radius text-center shadow-blur bg-gradual-orange" >
+			<view class="text-xl">没</view>
+      <view class="text-xl">有</view>
+      <view class="text-xl">找</view>
+      <view class="text-xl">到</view>
+      <view class="text-xl">内</view>
+      <view class="text-xl">容</view>
+		</view>
+	</view>
+</view>

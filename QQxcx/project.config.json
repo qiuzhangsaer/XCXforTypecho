@@ -28,7 +28,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wx8bb9d18a1404cf1b",
+	"appid": "",
 	"projectname": "XCXForTypecho",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -42,6 +42,7 @@
 		"beforePreview": "",
 		"beforeUpload": ""
 	},
+	"qqLibVersion": "1.15.0",
 	"condition": {
 		"search": {
 			"current": -1,
