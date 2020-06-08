@@ -1,7 +1,7 @@
 <view id="top">
 	<swiper class="banner screen-swiper square-dot" indicator-dots circular autoplay interval="5000" duration="500">
 		<swiper-item wx:for='{{4}}' wx:key>
-			<image id="img" src="{{resource_url}}xcx_banner{{index+1}}.png" mode="widthFix"></image>
+			<image id="img" src="{{resource_url}}banner{{index+1}}.png" mode="widthFix"></image>
 		</swiper-item>
 	</swiper>
 </view>

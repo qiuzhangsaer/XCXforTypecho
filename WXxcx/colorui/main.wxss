@@ -1550,6 +1550,7 @@ button.icon.lg {
 	align-items: center;
 	height: 100%;
 	justify-content: center;
+	min-width: 20px;
 	max-width: 100%;
 }
 

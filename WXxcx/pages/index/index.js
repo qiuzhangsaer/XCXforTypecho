@@ -12,11 +12,10 @@ import {
 } from "../../utils/tools.js"
 page({
 	data: {
-		opacity: 0.0,
 		TabCur: 0,
 		scrollLeft: 0,
 		scroll_width: wx.getMenuButtonBoundingClientRect().left,
-		resource_url: 'https://wx.xvkes.cn/'
+		resource_url: '../../static/images/'
 	},
 	/**
 	 * 用户点击右上角分享
@@ -42,22 +41,7 @@ page({
 	onPullDownRefresh: function () {
 		// 页面下拉
 	},
-	onPageScroll(e) {
-		var opacity, topNav
-		opacity = 100 / banner_height / 100 * e.scrollTop
-		opacity = opacity > 1 ? 1 : opacity
-		if (opacity != g.data.opacity) {
-			g.setData({
-				opacity
-			})
-		}
-		topNav = e.scrollTop >= class_height ? true : false;
-		if (topNav != g.data.topNav) {
-			g.setData({
-				topNav
-			})
-		}
-	},
+
 	refresh() {
 		g.setData({
 			animation: 'animation'
